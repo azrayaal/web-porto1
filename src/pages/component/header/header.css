@@ -1,0 +1,101 @@
+.crs1 {
+  /* background-image: url("asdfasdfgelap.jpg"); */
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.crs2 {
+  /* background-image: url("z2rgelap.jpg"); */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.crs3 {
+  /* background-image: url("z2qGELAP.jpg"); */
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-item h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  color: black;
+  font-weight: bold;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 35%;
+}
+.carousel-caption h5 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-caption p button {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #f096a7;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 30px;
+}
+.carousel-caption p button:hover {
+  background: #e68f9f;
+}
+
+.carousel-item.active h5 {
+  animation: fadeInLeft 0.5s ease forwards;
+}
+.carousel-item.active p {
+  animation: fadeInRight 0.5s ease forwards;
+}
+
+/* animate caption coursel */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* resposive coursel */
+@media (max-width: 767px) {
+  .d-none {
+    display: block !important;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+  }
+}
